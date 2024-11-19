@@ -220,6 +220,74 @@
             }
         }
     </style>
+<style>
+
+    .cards {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 20px; 
+    }
+
+    .card {
+        width: 250px; 
+        flex: 1 1 calc(50% - 40px); 
+        max-width: 100%; 
+    }
+
+    @media (max-width: 768px) {
+        .card {
+            flex: 1 1 calc(100% - 20px); 
+            margin: 10px auto; 
+        }
+
+        .cor-ciano h1 {
+            font-size: 40px;
+        }
+
+        .access-section h2 {
+            font-size: 24px;
+        }
+
+        nav {
+            flex-direction: column;
+            align-items: center;
+            padding: 10px 20px; 
+        }
+
+        .menu {
+            gap: 10px;
+            flex-direction: column; 
+        }
+
+        .menu a {
+            font-size: 14px;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .cor-ciano h1 {
+            font-size: 32px; 
+        }
+
+        .card {
+            width: 100%; 
+        }
+
+        nav {
+            padding: 5px 10px; 
+        }
+
+        .logo img {
+            width: 40px;
+        }
+
+        .logo span {
+            font-size: 18px;
+        }
+    }
+</style>
+    
 </head>
 <body>
 
